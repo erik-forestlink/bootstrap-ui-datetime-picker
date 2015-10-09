@@ -4,12 +4,10 @@
     </li>
     <li ng-if="showButtonBar" style="padding:5px">
         <span class="btn-group pull-left" style="margin-right:10px">
-            <button type="button" class="btn btn-sm btn-info" ng-click="select('today')" ng-disabled="isDisabled('today')">{{ getText('today') }}</button>
-            <button type="button" class="btn btn-sm btn-danger" ng-click="select(null)">{{ getText('clear') }}</button>
+            <button type="button" class="btn btn-sm btn-secondary btn-default" ng-click="select('today')" ng-disabled="isDisabled('today')">{{ getText('today') }}</button>
         </span>
         <span class="btn-group pull-right">
-            <button ng-if="enableTime" type="button" class="btn btn-sm btn-default" ng-click="changePicker($event, 'time')">{{ getText('time')}}</button>
-            <button type="button" class="btn btn-sm btn-success" ng-click="close()">{{ getText('close') }}</button>
+            <button type="button" class="btn btn-sm btn-secondary" ng-click="close()">{{ getText('close') }}</button>
         </span>
     </li>
 </ul>
