@@ -1,6 +1,6 @@
 // https://github.com/Gillardo/bootstrap-ui-datetime-picker
 // Version: 1.2.5
-// Released: 2015-10-09 
+// Released: 2015-10-13 
 angular.module('ui.bootstrap.datetimepicker', ['ui.bootstrap.dateparser', 'ui.bootstrap.position'])
     .constant('uiDatetimePickerConfig', {
         dateFormat: 'yyyy-MM-dd HH:mm',
@@ -11,12 +11,12 @@ angular.module('ui.bootstrap.datetimepicker', ['ui.bootstrap.dateparser', 'ui.bo
         },
         enableDate: true,
         enableTime: true,
-        todayText: 'Today',
-        nowText: 'Now',
-        clearText: 'Clear',
-        closeText: 'Done',
-        dateText: 'Date',
-        timeText: 'Time',
+        todayText: 'Idag',
+        nowText: 'Just nu',
+        clearText: 'Rensa',
+        closeText: 'Klar',
+        dateText: 'Datum',
+        timeText: 'Tid',
         closeOnDateSelection: true,
         appendToBody: false,
         showButtonBar: true
