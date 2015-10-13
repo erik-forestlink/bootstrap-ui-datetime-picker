@@ -14,7 +14,7 @@ angular.module('ui.bootstrap.datetimepicker', ['ui.bootstrap.dateparser', 'ui.bo
         todayText: 'Idag',
         nowText: 'Just nu',
         clearText: 'Rensa',
-        closeText: 'Klar',
+        closeText: 'Stäng',
         dateText: 'Datum',
         timeText: 'Tid',
         closeOnDateSelection: true,
@@ -441,7 +441,7 @@ angular.module('ui.bootstrap.datetimepicker').run(['$templateCache', function($t
   'use strict';
 
   $templateCache.put('template/date-picker.html',
-    "<ul ng-if=\"isOpen && showPicker == 'date'\" class=\"dropdown-menu dropdown-menu-left datetime-picker-dropdown\" ng-style=dropdownStyle style=left:inherit ng-keydown=keydown($event) ng-click=$event.stopPropagation()><li style=\"padding:0 5px 5px 5px\" class=date-picker-menu><div ng-transclude></div></li><li ng-if=showButtonBar style=padding:5px><span class=\"btn-group pull-left\" style=margin-right:10px><button type=button class=\"btn btn-sm btn-secondary btn-default\" ng-click=\"select('today')\" ng-disabled=\"isDisabled('today')\">{{ getText('today') }}</button></span> <span class=\"btn-group pull-right\"><button type=button class=\"btn btn-sm btn-secondary\" ng-click=close()>{{ getText('close') }}</button></span></li></ul>"
+    "<ul ng-if=\"isOpen && showPicker == 'date'\" class=\"dropdown-menu dropdown-menu-left datetime-picker-dropdown\" ng-style=dropdownStyle style=left:inherit ng-keydown=keydown($event) ng-click=$event.stopPropagation()><li style=\"padding:0 5px 5px 5px\" class=date-picker-menu><div ng-transclude></div></li><li ng-if=showButtonBar style=padding:5px><span class=\"btn-group pull-left\" style=margin-right:10px><button type=button class=\"btn btn-sm btn-secondary btn-default\" ng-click=\"select('today')\" ng-disabled=\"isDisabled('today')\">{{ getText('today') }}</button></span> <span class=\"btn-group pull-right\"><button type=button class=\"btn btn-sm btn-secondary btn-danger\" ng-click=close()>{{ getText('close') }}</button></span></li></ul>"
   );
 
 

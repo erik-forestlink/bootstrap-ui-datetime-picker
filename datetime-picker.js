@@ -11,7 +11,7 @@
         todayText: 'Idag',
         nowText: 'Just nu',
         clearText: 'Rensa',
-        closeText: 'Klar',
+        closeText: 'Stäng',
         dateText: 'Datum',
         timeText: 'Tid',
         closeOnDateSelection: true,
