@@ -3,9 +3,11 @@
         <div ng-transclude></div>
     </li>
     <li ng-if="showButtonBar" style="padding:5px">
+
         <span class="btn-group pull-left" style="margin-right:10px">
             <button type="button" class="btn btn-sm btn-secondary btn-default" ng-click="select('today')" ng-disabled="isDisabled('today')">{{ getText('today') }}</button>
         </span>
+
         <span class="btn-group pull-right">
             <button type="button" class="btn btn-sm btn-secondary" ng-click="close()">{{ getText('close') }}</button>
         </span>
